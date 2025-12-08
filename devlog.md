@@ -35,7 +35,7 @@ I also tested everythign to make sur that it all works on the sample_maze
 
 
 
-LOG ENTRY 5 AND FINAL LOGG ENTRY!!!!!! 12/08/2025 10:42 AM:
+LOG ENTRY 5 AND FINAL LOGG ENTRY!!!!!! 12/08/2025 10:02 AM:
 
 I have been working on this consistently over the past day and have essentially completed the requirements. But I think I will probably add some extra stuff before the submission date.
 
@@ -48,4 +48,9 @@ I am also using DFS to search and have the search_path/5 function to explore the
 I also canged teh find_exist method to have both verification and generation so that in generation, it validates the mzze, fidns the start, and calls search path and again checks the end position.
 
 
+
 This is the essence of what I have added, everythign should work now, but I will be checking further and working on this later after looking through all the requirements.
+
+LOG ENTRY 6 12/08/2025 11:30 AM:
+
+I looked thorugh the sampple-run.txt and I treid to make my displayed output match as close as I can to the sample-run.txt output and I think I got there

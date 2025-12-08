@@ -130,3 +130,41 @@ search_path(Maze, CurrentPos, Visited, [Action | RestActions], EndPos) :-
     legal_step(Maze, CurrentPos, Action, NextPos),
     \+ member(NextPos, Visited),
     search_path(Maze, NextPos, [NextPos | Visited], RestActions, EndPos).
+
+
+
+% basic_map/1 - A 3x3 maze
+basic_map([[w,s,w],
+           [f,f,w],
+           [e,w,w]]).
+
+% small_map/1 - A 4x4 maze
+small_map([[w,w,w,w],
+           [w,s,f,w],
+           [w,f,f,w],
+           [w,e,w,w]]).
+
+
+display_map(Map) :-
+    Map = [Row|_], length(Row,L),
+    write('    ▐'),display_line(L,'▁'),write('▍'),nl,
+    display_rows(Map),
+    write('    ▐'),display_line(L,'▔'),write('▍'),nl.
+
+display_rows([]).
+display_rows([Row|T]) :-
+    write('    ▐'),
+    display_row(Row),
+    write('▍'),nl,
+    display_rows(T).
+
+display_row([]).
+display_row([H|T]) :- display_symbol(H), display_row(T).
+
+display_symbol(n) :- write('░'), !.
+display_symbol(f) :- write(' '), !.
+display_symbol(w) :- write('█'), !.
+display_symbol(X) :- write(X).
+
+display_line(0,_).
+display_line(N,V) :- N>0, N2 is N-1, write(V), display_line(N2,V).
