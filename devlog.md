@@ -51,6 +51,6 @@ I also canged teh find_exist method to have both verification and generation so 
 
 This is the essence of what I have added, everythign should work now, but I will be checking further and working on this later after looking through all the requirements.
 
-LOG ENTRY 6 12/08/2025 11:30 AM:
+LOG ENTRY 6 THIS IS THE ACTUAL FINAL ENTRY !!!! 12/08/2025 11:30 AM:
 
 I looked thorugh the sampple-run.txt and I treid to make my displayed output match as close as I can to the sample-run.txt output and I think I got there
